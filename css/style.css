@@ -70,7 +70,6 @@ h2 {
 /**** Utilities ****/
 
 .container {
-  max-width: var(--max-width);
   display: flexbox;
   justify-content: center;
 }
@@ -153,12 +152,11 @@ header {
 }
 
 .main {
+  width: 100vw;
   background-color: var(--first-color);
   color: var(--text-color);
   padding-top: calc(var(--header-height) + 1rem);
   min-height: 100vh;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .message {
