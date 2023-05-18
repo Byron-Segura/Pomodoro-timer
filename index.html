@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pomodoro</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container text-center">
+        <h2>Pomodoro Timer</h2>
+      </div>
+    </header>
+    <main class="main text-center">
+      <div class="container">
+        <div class="phases-buttons">
+          <button class="focus phase pomodoro" data-phase="pomodoro">Pomodoro</button>
+          <button class="phase short-break" data-phase="shortBreak">Short Break</button>
+          <button class="phase long-break" data-phase="longBreak">Long Break</button>
+        </div>
+        <div class="countdown">
+          <p>25:00</p>
+        </div>
+        <div class="action-btn">
+          <button class="start-btn hover">Start</button>
+        </div>
+        <div class="message">
+        </div>
+      </div>
+    </main>
+    <article class="about text-left">
+      <div class="container">
+        <h1>About Pomodoro Technique</h1>
+        <h2>What is Pomodoro Technique?</h2>
+        <p>
+          The Pomodoro Technique is a time management method developed by
+          Francesco Cirillo in the late 1980s. It uses a kitchen timer to break
+          work into intervals, typically 25 minutes in length, separated by
+          short breaks. 
+        </p>
+          <p>
+            Each interval is known as a pomodoro, from the Italian
+            word for tomato, after the tomato-shaped kitchen timer Cirillo used as
+            a university student. -
+            <a
+              href="https://en.wikipedia.org/wiki/Pomodoro_Technique"
+              target="_blank"
+              rel="noopener"
+              >Wikipedia</a
+            >
+          </p>
+        <h2>Why use Pomodoro Technique?</h2>
+      
+          <ul>
+            <li type="disc">
+              Significantly improve your performance. 
+            </li>
+            <li type="disc">
+              Excellent method to organize yourself and learn to prioritize tasks.
+            </li>
+            <li type="disc">
+              It is compatible with other study methods.</li>
+            <li type="disc">
+              Avoid fatigue and cause motivation to achieve goals.
+            </li>
+          </ul>
+        </p>
+      </div>
+    </article>
+    <footer class="footer">
+      <small>Made by Byron Segura</small>
+    </footer>
+        <div class="hidden">
+      <audio class="audio" src="assets/notifications-sound.mp3" ></audio>
+      <audio class="click-sound" src="assets/button-sound.mp3" ></audio>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>
