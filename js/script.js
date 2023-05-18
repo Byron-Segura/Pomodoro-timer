@@ -3,7 +3,7 @@ let $countdown = d.querySelector(".countdown");
 const $phases = d.querySelector(".phases-buttons");
 const $start = d.querySelector(".start-btn");
 const $message = d.querySelector(".message");
-const $audio = d.querySelector(".audio");
+const $endAudio = d.querySelector(".end-audio");
 const $clickSound = d.querySelector(".click-sound");
 let interval;
 
@@ -70,11 +70,11 @@ function startTimer() {
           switchPhase("pomodoro");
       }
 
-      $audio.play();
+      $endAudio.play();
 
       startTimer();
     }
-  }, 500);
+  }, 1000);
 }
 
 function stopTimer() {
